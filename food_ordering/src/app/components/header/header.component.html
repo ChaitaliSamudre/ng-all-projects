@@ -1,1 +1,125 @@
-<p>header works!</p>
+<header class="showcase">
+    <div class="container">
+        <nav >
+            
+            <div>
+                <a href="#"><i class="fa fa-mobile-alt"></i> Get the App</a>
+            </div>
+            <div class="right-menu">
+                <div>
+                    <a href="#"><i class="fa fa-mobile-alt"></i>Add the restaurant</a>
+                </div>
+                <a href="#myModal" data-bs-toggle="modal" >Log in</a>
+
+
+<!-- Modal -->
+<div id="myModal" class="modal fade">
+<div class="modal-dialog modal-login">
+    <div class="modal-content">
+        <div class="modal-header">				
+            <h4 class="modal-title">Log in</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Username" required="required">
+                </div>
+                <div class="col">
+                <div class="input-group">
+                    <span class="input-group-text dropdown-toggle" id="inputGroupPrepend2"><img alt="flag" src="https://b.zmtcdn.com/images/flags_z10/in.png" loading="lazy" width="23" height="20"> +91</span>
+            <input type="text" class="form-control" placeholder="Phone number" aria-label="Last name">
+        
+                    
+                </div></div>
+                <br>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary btn-block btn-lg" value="Send OTP">
+                </div>
+                <br>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-outline-primary" type="button"><i class="bi bi-envelope-fill"></i>Continue with gmail</button>
+                    <button class="btn btn-outline-primary" type="button"><i class="bi bi-google"></i>Continue with Google</button>
+                  </div>
+            </form>				
+            <p class="hint-text small"><a  data-bs-dismiss="modal" data-bs-toggle="modal" href="#staticBackdrop">New to Zomato? Create account</a></p>
+        </div>
+    </div>
+</div>
+</div>     
+
+                
+                <a href="#staticBackdrop" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sign up</a>
+                
+                
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="staticBackdropLabel">Sign up</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" data-bs-toggle="modal"  aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+        <div class="signup-form">
+            <form >
+                <h3 id="create">Create an Account</h3>
+                <p class="hint-text">Sign up with your social media account or email address</p>
+                <div class="social-btn text-center">
+                    <a href="#" class="btn btn-primary btn-lg"><i class="fa fa-facebook"></i> Facebook</a>
+                    
+                    <a href="#" class="btn btn-danger btn-lg"><i class="fa fa-google"></i> Google</a>
+                </div>
+                <div class="or-seperator"><b>or</b></div>
+                <div class="form-group">
+                    <input type="username" class="form-control input-lg" name="username" placeholder="Username" required="required">
+                </div>
+                <div class="form-group">
+                    <input type="phone number" class="form-control input-lg" name="email" placeholder="Phone number" required="required">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control input-lg" name="password" placeholder="Password" required="required">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control input-lg" name="confirm_password" placeholder="Confirm Password" required="required">
+                </div>  
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success btn-lg btn-block signup-btn">Sign Up</button>
+                </div>
+            </form>
+            <div class="text-center"><a data-dismiss="modal" data-bs-toggle="modal" href="#myModal">Already have Zomato account? Login here</a></div>
+        </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-primary">Create Account</button>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+        </nav>
+            </div>
+        
+
+        
+        <div class="hero-text">
+            <img src="../../../assets/images/logo.webp" width="300">
+            <h1>Discover the best food & drinks in <span class="bold-place">Mumbai</span></h1>
+            <div class="search-bar">
+                <div class="search-3">
+                    <i class="fa fa-map-marker-alt"></i>
+                    <input type="text" placeholder="Mumbai">
+                    <i class="fa fa-caret-down"></i>
+                </div>
+                <div class="search-2">
+                    <i class="fas fa-search"></i>
+                    <input type="text" class="search-right" placeholder="Search for restaurant" >				
+                </div>
+            </div>
+        </div>
+    
+    
+</header>

@@ -1,0 +1,5 @@
+<p>message-parent works!</p>
+<h2>{{sendMessage | json}}</h2>
+<app-message-child
+(sendMessage)="receivedChildData($event)"
+></app-message-child>

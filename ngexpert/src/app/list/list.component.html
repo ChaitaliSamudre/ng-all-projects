@@ -1,0 +1,28 @@
+<p>list works!</p>
+<app-if></app-if>
+<app-switch></app-switch>
+<div class="row">
+    <h2>This just loop over array</h2>
+    <div *ngFor="let myelm of [1,2,3]" class="card col m-3">
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fnature&psig=AOvVaw11P1xGxF9Cnh6ePv_rblko&ust=1649143574941000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCKDIvdvw-fYCFQAAAAAdAAAAABAD" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{myelm}}</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <h2>This loop over array of object</h2>
+    <div *ngFor="let myelm of itemList" class="card col m-3">
+        <span *ngIf="myelm.title === 'HOME'"><h6>Hello this is if</h6></span>
+        <img width="200" height="300" src="{{myelm.imageLink}}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{myelm.title}}</h5>
+            <p class="card-text">{{myelm.content}}</p>
+            <a target="_blank" href="{{myelm.link}}" class="btn btn-primary">{{myelm.btnText}}</a>
+        </div>
+    </div>
+</div>

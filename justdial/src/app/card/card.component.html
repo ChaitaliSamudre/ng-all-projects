@@ -1,0 +1,93 @@
+<!--<p>card works!</p>-->
+<br>
+
+<h4>Popular Services</h4>
+
+<br>
+<div class="container row justify-content-start">
+    <div *ngFor="let element of Box1" class="col-5 ">
+        <div class="row border">
+            <div class="col-6 flex-wrap">
+                <h5 class="card-title">{{element.title}}</h5>
+                <p class="card-text">{{element.text1}}</p>
+                <p class="card-text">{{element.text2}}</p>
+                <p class="card-text">{{element.text3}}</p>
+                <p class="card-text">{{element.text4}}</p>
+            </div>
+            <div class="col-md-6">
+                <div class="card-body">
+                    <img src="{{element.imagelink}}" class="card-img" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="container row justify-content-start">
+    <div *ngFor="let element of Box2" class="col-5 ">
+        <div class="row no-gutters border">
+            <div class="col-6 flex-wrap">
+                <img src="{{element.imagelink}}" class="card-img" alt="...">
+            </div>
+            <div class="col-md-6">
+                <div class="card-body">
+                    <h5 class="card-title">{{element.title}}</h5>
+                    <p class="card-text">{{element.text1}}</p>
+                    <p class="card-text">{{element.text2}}</p>
+                    <p class="card-text">{{element.text3}}</p>
+                    <p class="card-text">{{element.text4}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<h4>Whats Trending?</h4>
+<br>
+
+<div class="container row justify-content-start">
+    <div *ngFor="let element of Box3" class="col-5 ">
+        <div class="row border">
+            <div class="col-6 flex-wrap">
+                <h5 class="card-title">{{element.title}}</h5>
+                <p class="card-text">{{element.text1}}</p>
+                <p class="card-text">{{element.text2}}</p>
+                <p class="card-text">{{element.text3}}</p>
+                <p class="card-text">{{element.text4}}</p>
+            </div>
+            <div class="col-md-6">
+                <div class="card-body">
+                    <img src="{{element.imagelink}}" class="card-img" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<div class="container row justify-content-start ">
+    <div *ngFor="let element of Box4" class="col-5 ">
+        <div class="row no-gutters border">
+            <div class="col-6 flex-wrap">
+                <img src="{{element.imagelink}}" class="card-img" alt="...">
+            </div>
+            <div class="col-md-6">
+                <div class="card-body">
+                    <h5 class="card-title">{{element.title}}</h5>
+                    <p class="card-text">{{element.text1}}</p>
+                    <p class="card-text">{{element.text2}}</p>
+                    <p class="card-text">{{element.text3}}</p>
+                    <p class="card-text">{{element.text4}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br>
+
+

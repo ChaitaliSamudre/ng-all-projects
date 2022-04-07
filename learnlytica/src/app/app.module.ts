@@ -14,7 +14,10 @@ import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { AddressComponent } from './components/address/address.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './components/login/login.component';
+import { RegistrationComponent } from './components/registration/registration.component';
+
 
 
 @NgModule({
@@ -30,7 +33,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'
     HomeComponent,
     NotFoundComponent,
     AddressComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    LoginComponent,
+    RegistrationComponent,
   ],
   imports: [
     BrowserModule,

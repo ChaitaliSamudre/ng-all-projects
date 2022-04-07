@@ -12,6 +12,10 @@ import { ServicesComponent } from './components/services/services.component';
 import { ListContactComponent } from './components/list-contact/list-contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { AddressComponent } from './components/address/address.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+
 
 @NgModule({
   declarations: [
@@ -24,11 +28,14 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     ServicesComponent,
     ListContactComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    AddressComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,4 +11,9 @@ export class ConfigService {
   getCourseConfigs() {
     return this.myHttp.get('https://httpstat.us/200');
   }
+
+  getCourseList() {
+    return this.myHttp.get('assets/mock-data/courses-list.json');
+
+  }
 }

@@ -1,3 +1,10 @@
-<p>list-course works!</p>
+<div class="row">
+    <div class="col" *ngFor="let course of  myCourse?.['sub-home'].data">
+        {{course._id | json}}
+        <app-course [imgid]="course._id" [configs]="course['spayee:resource']">
+        </app-course>
+    </div> 
+    
+</div>
 
-<app-course></app-course>
+

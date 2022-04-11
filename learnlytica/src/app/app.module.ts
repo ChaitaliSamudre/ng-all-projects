@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSliderModule} from '@angular/material/slider';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatTabsModule} from '@angular/material/tabs';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +22,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
 import { RegistrationComponent } from './components/registration/registration.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ListProfilesComponent } from './list-profiles/list-profiles.component';
+import { MaterialExampleModule } from './materials/materials.module';
 
 
 @NgModule({
@@ -38,7 +41,8 @@ import { HttpClientModule } from '@angular/common/http';
     AddressComponent,
     ContactFormComponent,
     LoginComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    ListProfilesComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +51,9 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     BrowserAnimationsModule,
     MatSliderModule,
-    MatDialogModule
+    MatDialogModule,
+    MatTabsModule,
+    MaterialExampleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

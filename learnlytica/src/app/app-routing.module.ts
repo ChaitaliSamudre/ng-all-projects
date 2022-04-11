@@ -8,9 +8,11 @@ import { LoginComponent } from './components/login/login.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { RegistrationComponent } from './components/registration/registration.component';
 import { ServicesComponent } from './components/services/services.component';
+import { ListProfilesComponent } from './list-profiles/list-profiles.component';
 
 const routes: Routes = [
   { path : 'home', component: HomeComponent},
+  { path: 'list-profiles', component: ListProfilesComponent},
   { path : 'course', component: ListCourseComponent},
   { path : 'login', component: LoginComponent},
   { path : 'registration', component: RegistrationComponent},

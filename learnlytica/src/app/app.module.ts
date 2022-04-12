@@ -25,6 +25,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ListProfilesComponent } from './list-profiles/list-profiles.component';
 import { MaterialExampleModule } from './materials/materials.module';
 import { DetailProfileComponent } from './detail-profile/detail-profile.component';
+import { ReactiveComponent } from './components/reactive/reactive.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { DetailProfileComponent } from './detail-profile/detail-profile.componen
     LoginComponent,
     RegistrationComponent,
     ListProfilesComponent,
-    DetailProfileComponent
+    DetailProfileComponent,
+    ReactiveComponent
   ],
   imports: [
     BrowserModule,

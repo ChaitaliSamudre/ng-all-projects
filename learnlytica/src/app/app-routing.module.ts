@@ -8,6 +8,7 @@ import { LoginComponent } from './components/login/login.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { RegistrationComponent } from './components/registration/registration.component';
 import { ServicesComponent } from './components/services/services.component';
+import { DetailProfileComponent } from './detail-profile/detail-profile.component';
 import { ListProfilesComponent } from './list-profiles/list-profiles.component';
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path : 'registration', component: RegistrationComponent},
   { path : 'services', component: ServicesComponent},
   { path : 'list-contact', component : ListContactComponent},
+  { path : 'profile/:pid', component:DetailProfileComponent},
   { path : '**', component: NotFoundComponent}
 
 ];

@@ -1,3 +1,11 @@
+<h1>{{UserTitle | json}}</h1>
+<!-- <h1>{{userFromApi | json}}</h1> -->
+<ul>
+  <li *ngFor="let user of UserTitle">
+    <h2>{{user.name}} -> {{user.city}}</h2>
+  </li>
+</ul>
+
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
     <!--- Note that these columns can be defined in any order.

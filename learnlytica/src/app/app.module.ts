@@ -26,6 +26,8 @@ import { ListProfilesComponent } from './list-profiles/list-profiles.component';
 import { MaterialExampleModule } from './materials/materials.module';
 import { DetailProfileComponent } from './detail-profile/detail-profile.component';
 import { ReactiveComponent } from './components/reactive/reactive.component';
+import { TitlePipe } from './pipes/title.pipe';
+import { BracketPipe } from './pipes/bracket.pipe';
 
 
 @NgModule({
@@ -46,7 +48,9 @@ import { ReactiveComponent } from './components/reactive/reactive.component';
     RegistrationComponent,
     ListProfilesComponent,
     DetailProfileComponent,
-    ReactiveComponent
+    ReactiveComponent,
+    TitlePipe,
+    BracketPipe
   ],
   imports: [
     BrowserModule,

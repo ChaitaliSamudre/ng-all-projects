@@ -7,6 +7,7 @@ import { ConfigService } from 'src/app/services/config.service';
   styleUrls: ['./list-course.component.css']
 })
 export class ListCourseComponent implements OnInit {
+  myTitle:string = 'thbs';
   myCourse : any;
 
 

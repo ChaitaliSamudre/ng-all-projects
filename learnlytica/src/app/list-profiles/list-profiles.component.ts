@@ -30,6 +30,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 export class ListProfilesComponent implements OnInit {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
+  
   UserTitle? : any;
   // UserFromApi
   // mydata: any;
@@ -44,8 +45,7 @@ export class ListProfilesComponent implements OnInit {
             element['title'] = "thbs" + index;
             element['name'] = "Mr." + element['name'];
             return element;
-          }
-        )
+          })
       })
     )
      

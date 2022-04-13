@@ -1,8 +1,11 @@
+<h1>{{300 | bracket}}</h1>
+<h1>{{400 | bracket}}</h1>
 <h1>{{UserTitle | json}}</h1>
+<!-- <h1>{{UserTitle | title: 'Mr..'}}</h1> -->
 <!-- <h1>{{userFromApi | json}}</h1> -->
 <ul>
   <li *ngFor="let user of UserTitle">
-    <h2>{{user.name}} -> {{user.city}} --> {{user.title}}</h2>
+    <h2>{{user.name | title: 'angular'}} -> {{user.city | title}} --> {{user.title}}</h2>
   </li>
 </ul>
 

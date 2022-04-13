@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { elementAt, tap } from 'rxjs';
 import { UserService } from '../services/user.service';
 
 export interface PeriodicElement {
@@ -30,12 +31,25 @@ export class ListProfilesComponent implements OnInit {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
   UserTitle? : any;
-  // UserFromApi?: any;
+  // UserFromApi
+  // mydata: any;
   constructor(private myUserSer:UserService) { }
 
   ngOnInit(): void {
     this.UserTitle = this.myUserSer.getUserList()
-      this.UserTitle.subscribe((data: any) => {this.UserTitle = data});
+    .pipe(
+      tap((userList:any) => {
+        userList.map(
+          (element:any,index:number, arr:any) => {
+            element['title'] = "thbs" + index;
+            element['name'] = "Mr." + element['name'];
+            return element;
+          }
+        )
+      })
+    )
+     
+      .subscribe((data: any) => {this.UserTitle = data});
       // console.log(this.UserTitle)
       }
     

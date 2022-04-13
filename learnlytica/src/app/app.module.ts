@@ -28,6 +28,7 @@ import { DetailProfileComponent } from './detail-profile/detail-profile.componen
 import { ReactiveComponent } from './components/reactive/reactive.component';
 import { TitlePipe } from './pipes/title.pipe';
 import { BracketPipe } from './pipes/bracket.pipe';
+import { ThbsBackgroundDirective } from './directives/thbs-background.directive';
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { BracketPipe } from './pipes/bracket.pipe';
     DetailProfileComponent,
     ReactiveComponent,
     TitlePipe,
-    BracketPipe
+    BracketPipe,
+    ThbsBackgroundDirective
   ],
   imports: [
     BrowserModule,

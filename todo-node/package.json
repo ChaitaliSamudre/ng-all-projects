@@ -1,0 +1,17 @@
+{
+  "name": "todo-node",
+  "version": "1.0.0",
+  "description": "learning project",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "chaitali",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  }
+}

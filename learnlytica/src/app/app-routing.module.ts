@@ -9,6 +9,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { ReactiveComponent } from './components/reactive/reactive.component';
 import { RegistrationComponent } from './components/registration/registration.component';
 import { ServicesComponent } from './components/services/services.component';
+import { TemplateFormComponent } from './components/template-form/template-form.component';
 import { DetailProfileComponent } from './detail-profile/detail-profile.component';
 import { ListProfilesComponent } from './list-profiles/list-profiles.component';
 
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path : 'home', component: HomeComponent},
   { path: 'list-profiles', component: ListProfilesComponent},
   { path : 'course', component: ListCourseComponent},
+  { path : 'template-form', component: TemplateFormComponent},
   { path : 'login', component: LoginComponent},
   { path : 'registration', component: RegistrationComponent},
   { path : 'services', component: ServicesComponent},

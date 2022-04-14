@@ -29,6 +29,7 @@ import { ReactiveComponent } from './components/reactive/reactive.component';
 import { TitlePipe } from './pipes/title.pipe';
 import { BracketPipe } from './pipes/bracket.pipe';
 import { ThbsBackgroundDirective } from './directives/thbs-background.directive';
+import { TemplateFormComponent } from './components/template-form/template-form.component';
 
 
 @NgModule({
@@ -52,7 +53,8 @@ import { ThbsBackgroundDirective } from './directives/thbs-background.directive'
     ReactiveComponent,
     TitlePipe,
     BracketPipe,
-    ThbsBackgroundDirective
+    ThbsBackgroundDirective,
+    TemplateFormComponent
   ],
   imports: [
     BrowserModule,
@@ -60,6 +62,7 @@ import { ThbsBackgroundDirective } from './directives/thbs-background.directive'
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    FormsModule,
     MatSliderModule,
     MatDialogModule,
     MatTabsModule,

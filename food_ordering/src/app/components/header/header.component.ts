@@ -23,8 +23,6 @@ export class HeaderComponent implements OnInit {
           width: '600px',
           disableClose: true
         },
-        
-
       );
 
     dialogRef.afterClosed().subscribe(result => {
@@ -40,14 +38,10 @@ export class HeaderComponent implements OnInit {
           width: '600px',
           disableClose: true
         },
-        
-
       );
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
     });
   }
-
-
 }

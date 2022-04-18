@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { MaterialExampleModule } from './material/material.module';
+import { MaterialModule } from './materials/materials.module';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -28,7 +28,7 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
     AppRoutingModule,
     ReactiveFormsModule,
     MatDialogModule,
-    MaterialExampleModule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

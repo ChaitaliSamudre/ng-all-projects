@@ -41,5 +41,12 @@ router.get('/profile', function (req, res, next) {
     res.send(results)
   })
 });
+router.post('/contact',function(req,res,next){
+
+  console.log(req.body);
+
+  res.send("i am post call");
+
+});
 
 module.exports = router;

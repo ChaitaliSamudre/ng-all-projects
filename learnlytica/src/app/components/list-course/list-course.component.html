@@ -5,13 +5,14 @@
 </mat-tab-group> -->
 <br>
 <h1>{{myTitle | title:'react js'}}</h1>
+<div *ngFor="let user of userList">
+    {{user | json}}
+</div>
 <br>
 <div class="row">
     <div class="col" *ngFor="let course of  myCourse?.['sub-home'].data">
         {{course._id | json}}
         <app-course [imgid]="course._id" [configs]="course['spayee:resource']">
         </app-course>
-    </div> 
+    </div>
 </div>
-
-

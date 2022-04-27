@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ConfigService } from 'src/app/services/config.service';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-list-course',
@@ -9,15 +10,17 @@ import { ConfigService } from 'src/app/services/config.service';
 export class ListCourseComponent implements OnInit {
   myTitle:string = 'thbs';
   myCourse : any;
+  userList: any;
 
 
-  constructor(private mConfig: ConfigService) { }
+  constructor(private mConfig: ConfigService, private myUserSrv:UserService) { }
 
   ngOnInit(): void {
     this.mConfig.getCourseList().subscribe((sdata) => {
-      // console.log()
       this.myCourse=sdata   
     });
+    this.myUserSrv.getProfiles().subscribe((result:any) => {
+      this.userList=result;
+    }); 
   }
-
 }

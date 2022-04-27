@@ -45,7 +45,7 @@ router.post('/contact',function(req,res,next){
 
   console.log(req.body);
 
-  res.send("i am post call");
+  res.send("Resgistered Successful");
 
 });
 

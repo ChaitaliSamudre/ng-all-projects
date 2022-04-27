@@ -1,0 +1,53 @@
+/*Collections*/
+.collections {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.collections p{
+	font-size: 18px;
+}
+
+.collections a{
+	font-size: 16px;
+	color: #f57082;
+	text-decoration: none;
+}
+
+.collections .fa-caret-right{
+	margin-left: 10px;
+}
+
+.collection-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
+	margin-bottom: 100px;
+}
+
+.collection-grid .collection-box {
+	position: relative;
+}
+
+.collection-grid .collection-box img {
+	width: 100%;
+	border-radius: 8px;
+}
+
+.collection-grid .collection-box .collection-title {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 10px 15px;
+}
+
+.collection-grid .collection-box .collection-title h3 {
+	font-weight: 500;
+	color: #fff;
+}
+
+.collection-grid .collection-box .collection-title p {
+	color: #fff;
+}

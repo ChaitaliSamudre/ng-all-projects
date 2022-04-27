@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-contact-form',
@@ -21,13 +22,18 @@ export class ContactFormComponent implements OnInit {
   }
   );
 
-  constructor() { }
+  constructor(private usrService: UserService) { }
 
   ngOnInit(): void {
     }
     
     getValues() {
       console.log(this.myform);
+
+      this.usrService.submitContactDetails(this.myform.value)
+      .subscribe((data) => {
+        console.log(data)
+      })
   }
     
 }

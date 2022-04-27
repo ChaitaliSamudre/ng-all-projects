@@ -1,6 +1,24 @@
 {
   "dependencies": {
     "bootstrap": "^5.1.3",
+    "mysql": "^2.18.1",
     "nodemon": "^2.0.15"
-  }
+  },
+  "name": "lab",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChaitaliSamudre/ng-all-projects.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChaitaliSamudre/ng-all-projects/issues"
+  },
+  "homepage": "https://github.com/ChaitaliSamudre/ng-all-projects#readme",
+  "description": ""
 }

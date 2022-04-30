@@ -14,6 +14,7 @@ import { MainContainerComponent } from './components/main-container/main-contain
 import { LoginComponent } from './components/login/login.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { ListingComponent } from './components/listing/listing.component';
+import { DiningOutComponent } from './components/dining-out/dining-out.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ListingComponent } from './components/listing/listing.component';
     MainContainerComponent,
     LoginComponent,
     SignUpComponent,
-    ListingComponent
+    ListingComponent,
+    DiningOutComponent
   ],
   imports: [
     BrowserModule,

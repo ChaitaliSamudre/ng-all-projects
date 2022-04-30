@@ -6,8 +6,20 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./listing.component.css']
 })
 export class ListingComponent implements OnInit {
-  @Input() configs: any;
-  @Input() imgid: any;
+  Box1 = [
+    {
+     Name: 'Pizza',
+     Price: 300,
+     imagelink: '../../assets/image/img2.jpg'
+    },
+    {
+      Name: 'Burger',
+      Price: 200,
+      imagelink: '../../assets/image/doctors.jpg'
+
+    }
+  ];
+ 
   constructor() { }
 
   ngOnInit(): void {

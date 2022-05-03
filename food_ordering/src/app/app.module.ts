@@ -18,6 +18,7 @@ import { DiningOutComponent } from './components/dining-out/dining-out.component
 import { ProPageComponent } from './components/pro-page/pro-page.component';
 import { OrderNowComponent } from './components/order-now/order-now.component';
 import { ConfirmOrderComponent } from './components/confirm-order/confirm-order.component';
+import { BookNowComponent } from './components/book-now/book-now.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ConfirmOrderComponent } from './components/confirm-order/confirm-order.
     DiningOutComponent,
     ProPageComponent,
     OrderNowComponent,
-    ConfirmOrderComponent
+    ConfirmOrderComponent,
+    BookNowComponent
   ],
   imports: [
     BrowserModule,

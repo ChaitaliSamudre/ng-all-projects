@@ -17,6 +17,7 @@ import { ListingComponent } from './components/listing/listing.component';
 import { DiningOutComponent } from './components/dining-out/dining-out.component';
 import { ProPageComponent } from './components/pro-page/pro-page.component';
 import { OrderNowComponent } from './components/order-now/order-now.component';
+import { ConfirmOrderComponent } from './components/confirm-order/confirm-order.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { OrderNowComponent } from './components/order-now/order-now.component';
     ListingComponent,
     DiningOutComponent,
     ProPageComponent,
-    OrderNowComponent
+    OrderNowComponent,
+    ConfirmOrderComponent
   ],
   imports: [
     BrowserModule,

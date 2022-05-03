@@ -1,5 +1,7 @@
+import { compileClassMetadata } from '@angular/compiler';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ConfirmOrderComponent } from './components/confirm-order/confirm-order.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { DiningOutComponent } from './components/dining-out/dining-out.component';
 import { ListingComponent } from './components/listing/listing.component';
@@ -13,7 +15,8 @@ const routes: Routes = [
   {path:'sign-up', component:SignUpComponent },
   {path:'listing', component:ListingComponent},
   {path:'dining-out', component:DiningOutComponent},
-  {path: 'order-now', component: OrderNowComponent}
+  {path: 'order-now', component: OrderNowComponent},
+  {path: 'confirm-order', component:ConfirmOrderComponent}
 ];
 
 @NgModule({

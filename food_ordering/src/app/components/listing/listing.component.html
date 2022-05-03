@@ -16,45 +16,7 @@
       <button class="m-3" mat-stroked-button>More..</button>
     </div>
   </section>
-
-  <!-- Collections -->
-<!-- <section class="container">
-  <h1>Collections</h1>
-  <div class="collections">
-      <p>Explore curated lists of top restaurants, cafes, pubs, and bars in Mumbai, based on trends</p>
-      <a href="#">All collections in Mumbai <i class="fa fa-caret-right"></i></a>
-  </div>
-  <div class="collection-grid">
-      <div class="collection-box">
-          <img src="../assets/images/collection1.jpg">
-          <div class="collection-title">
-              <h3>Best of Mumbai</h3>
-              <p>220 Places <i class="fa fa-caret-right"></i></p>
-          </div>
-      </div>
-      <div class="collection-box">
-          <img src="../assets/images/collection2.jpg">
-          <div class="collection-title">
-              <h3>Trending This Week</h3>
-              <p>30 Places <i class="fa fa-caret-right"></i></p>
-          </div>
-      </div>
-      <div class="collection-box">
-          <img src="../assets/images/collection3.jpg">
-          <div class="collection-title">
-              <h3>Newly Opened</h3>
-              <p>7 Places <i class="fa fa-caret-right"></i></p>
-          </div>
-      </div>
-      <div class="collection-box">
-          <img src="../assets/images/collection4.webp">
-          <div class="collection-title">
-              <h3>Work Friendly Places!</h3>
-              <p>19 Places <i class="fa fa-caret-right"></i></p>
-          </div>
-      </div>
-  </div> -->
-<!-- </section> -->
+ 
 <h1>Order food online in Mominpura, Nagpur</h1>
 <section class="container">
     <div class="order-cat">
@@ -63,7 +25,7 @@
             <div class="order-title-bg">
                 <p class="order-title">Full meal</p>
                 <p>Price: Rs.250</p>
-                <a href="#" class="btn btn-primary">Order Now</a>
+                <a [routerLink]="['/order-now']" mat-tab-group mat-align-tabs= 'start' class="btn btn-primary" >Order Now</a>
             </div>
         </div>
         <div class="hover">
@@ -71,7 +33,7 @@
             <div class="order-title-bg">
                 <p class="order-title">Dosa</p>
                 <p>Price: Rs.150</p>
-                <a href="#" class="btn btn-primary">Order Now</a>
+                <a [routerLink]="['/order-now']" mat-tab-group mat-align-tabs= 'start' class="btn btn-primary" >Order Now</a>
             </div>
         </div>
         <div class="hover">
@@ -79,7 +41,7 @@
             <div class="order-title-bg">
                 <p class="order-title">Momos</p>
                 <p>Price: Rs. 200</p>
-                <a href="#" class="btn btn-primary">Order Now</a>
+                <a [routerLink]="['/order-now']" mat-tab-group mat-align-tabs= 'start' class="btn btn-primary" >Order Now</a>
             </div>
         </div>
     </div>
@@ -91,7 +53,7 @@
         <div class="order-title-bg">
             <p class="order-title">Cakes</p>
             <p>Price: Rs 300</p>
-            <a href="#" class="btn btn-primary">Order Now</a>
+            <a [routerLink]="['/order-now']" mat-tab-group mat-align-tabs= 'start' class="btn btn-primary" >Order Now</a>
         </div>
     </div>
     <div class="hover">
@@ -99,7 +61,7 @@
         <div class="order-title-bg">
             <p class="order-title">Beverages</p>
             <p>Price: Rs. 300</p>
-            <a href="#" class="btn btn-primary">Order Now</a>
+            <a [routerLink]="['/order-now']" mat-tab-group mat-align-tabs= 'start' class="btn btn-primary" >Order Now</a>
         </div>
     </div>
     <div class="hover">
@@ -107,7 +69,7 @@
         <div class="order-title-bg">
             <p class="order-title">Home style</p>
                 <p>Price: Rs. 350</p>
-                <a href="#" class="btn btn-primary">Order Now</a>
+                <a [routerLink]="['/order-now']" mat-tab-group mat-align-tabs= 'start' class="btn btn-primary" >Order Now</a>
         </div>
     </div>
 </div>

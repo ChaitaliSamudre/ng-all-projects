@@ -41,7 +41,10 @@
     <label for="inputState" class="form-label">State</label>
     <select id="inputState" class="form-select">
       <option selected>Choose...</option>
-      <option>...</option>
+      <option>Maharashtra</option>
+      <option>Uttar Pradesh</option>
+      <option>Karnataka</option>
+      <option>Madhya Pradesh</option>
     </select>
   </div>
   <div class="col-md-2 form-group">
@@ -52,9 +55,10 @@
   </div>
   </div>
   <div class="col-12 ">
-      <button type="submit" [disabled]="myform1.invalid" (click)="getValues" class="btn btn-primary" style="align-items: center;">Sign up</button>
+      <button type="submit" (click)="getValues" class="btn btn-primary" style="align-items: center;">Sign up</button>
       <a href="/login" >Already have an account? Login</a>
       <button mat-button mat-dialog-close>Cancel</button>
   </div>
   </form>
+  <br>
   </div>

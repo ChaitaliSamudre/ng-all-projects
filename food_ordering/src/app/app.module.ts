@@ -16,6 +16,7 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { ListingComponent } from './components/listing/listing.component';
 import { DiningOutComponent } from './components/dining-out/dining-out.component';
 import { ProPageComponent } from './components/pro-page/pro-page.component';
+import { OrderNowComponent } from './components/order-now/order-now.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ProPageComponent } from './components/pro-page/pro-page.component';
     SignUpComponent,
     ListingComponent,
     DiningOutComponent,
-    ProPageComponent
+    ProPageComponent,
+    OrderNowComponent
   ],
   imports: [
     BrowserModule,

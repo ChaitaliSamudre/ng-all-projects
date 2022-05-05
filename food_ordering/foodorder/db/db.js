@@ -10,4 +10,4 @@ let learn = function () {
     });
     return connection;
 }
-module.exports.localConnect = food;
+module.exports.localConnect = learn;

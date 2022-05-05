@@ -19,6 +19,7 @@ import { ProPageComponent } from './components/pro-page/pro-page.component';
 import { OrderNowComponent } from './components/order-now/order-now.component';
 import { ConfirmOrderComponent } from './components/confirm-order/confirm-order.component';
 import { BookNowComponent } from './components/book-now/book-now.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -42,9 +43,11 @@ import { BookNowComponent } from './components/book-now/book-now.component';
     ReactiveFormsModule,
     MatDialogModule,
     MatTabsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+ }

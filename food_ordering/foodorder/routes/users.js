@@ -1,15 +1,16 @@
 var express = require('express');
+const { request } = require('http');
 var router = express.Router();
 let dbConnection = require('./../db/db').localConnect(); 
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+// router.get('/', function(req, res, next) {
+//   res.send('respond with a resource');
+// });
 
 // Signup database post and get method
-router.get('/sign-up', function (req, res, next) {
-  dbConnection.query('SELECT * FROM food_order.sign_up', (error,results,fields) => {
+router.get('/', function (req, res, next) {
+  dbConnection.query('SELECT * FROM sign_up', (error,results,fields) => {
     if(error) throw error;
     res.send(results);
 
@@ -20,6 +21,7 @@ router.get('/sign-up', function (req, res, next) {
 //post methods-login
 
 router.post('/sign-up', (req, res, next) => {
+  console.log(req.body)
   let {
    Name,
    phone,
@@ -30,7 +32,7 @@ router.post('/sign-up', (req, res, next) => {
    zip 
   } = req.body
 
-  let insertcommand = `INSERT INTO food_order.sign_up(Name,phone,email,Address,city,state,zip)
+  let insertcommand = `INSERT INTO sign_up(Name,phone,email,Address,city,state,zip)
    VALUES ('${Name}','${phone}','${email}','${Address}','${city}','${state}','${zip}')`;
 
   dbConnection.query(insertcommand, (err, result) => {
@@ -45,7 +47,7 @@ router.post('/sign-up', (req, res, next) => {
 
 router.get('/sign-up', function (req, res, next) {
 
-  dbConnection.query('SELECT * FROM food_order.sign_up', (error, results, fields) => {
+  dbConnection.query('SELECT * FROM sign_up', (error, results, fields) => {
     if (error) throw error;
     res.send(results);
 
@@ -57,7 +59,7 @@ router.get('/sign-up', function (req, res, next) {
 
 // ordernow database post and get method
 router.get('/order-now', function (req, res, next) {
-  dbConnection.query('SELECT * FROM food_order.order_now', (error,results,fields) => {
+  dbConnection.query('SELECT * FROM order_now', (error,results,fields) => {
     if(error) throw error;
     res.send(results);
 
@@ -74,7 +76,7 @@ router.post('/order-now', (req, res, next) => {
    phone
   } = req.body
 
-  let insertcommand = `INSERT INTO food_order.order_now(Name,Address,phone)
+  let insertcommand = `INSERT INTO order_now(Name,Address,phone)
    VALUES ('${Name}','${Address}','${phone}')`;
 
   dbConnection.query(insertcommand, (err, result) => {
@@ -89,7 +91,7 @@ router.post('/order-now', (req, res, next) => {
 
 router.get('/order-now', function (req, res, next) {
 
-  dbConnection.query('SELECT * FROM food_order.order_now', (error, results, fields) => {
+  dbConnection.query('SELECT * FROM order_now', (error, results, fields) => {
     if (error) throw error;
     res.send(results);
 
@@ -100,7 +102,7 @@ router.get('/order-now', function (req, res, next) {
 });
 //booknow post and get method
 router.get('/book-now', function (req, res, next) {
-  dbConnection.query('SELECT * FROM food_order.book_now', (error,results,fields) => {
+  dbConnection.query('SELECT * FROM book_now', (error,results,fields) => {
     if(error) throw error;
     res.send(results);
 
@@ -120,7 +122,7 @@ router.post('/book-now', (req, res, next) => {
    noa
   } = req.body
 
-  let insertcommand = `INSERT INTO food_order.book_now(Name,phone,email,date,time,noa)
+  let insertcommand = `INSERT INTO book_now(Name,phone,email,date,time,noa)
    VALUES ('${Name}','${phone}','${email}','${date}','${time}','${noa}')`;
 
   dbConnection.query(insertcommand, (err, result) => {
@@ -135,7 +137,7 @@ router.post('/book-now', (req, res, next) => {
 
 router.get('/book-now', function (req, res, next) {
 
-  dbConnection.query('SELECT * FROM food_order.book_now', (error, results, fields) => {
+  dbConnection.query('SELECT * FROM book_now', (error, results, fields) => {
     if (error) throw error;
     res.send(results);
 

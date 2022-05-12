@@ -14,7 +14,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  openDialog() {
+  openloginDialog() {
     const dialogRef = this.myDialog
       .open(
         LoginComponent,
@@ -25,9 +25,9 @@ export class HeaderComponent implements OnInit {
         },
       );
 
-    dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
-    });
+    // dialogRef.afterClosed().subscribe(result => {
+    //   console.log(`Dialog result: ${result}`);
+    // });
   }
   openDialog1() {
     const dialogRef = this.myDialog

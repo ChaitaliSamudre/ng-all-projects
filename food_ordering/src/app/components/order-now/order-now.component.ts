@@ -11,8 +11,9 @@ export class OrderNowComponent implements OnInit {
     {
     name: new FormControl('',Validators.required), 
     address:new FormControl('',Validators.required), 
-    phone: new FormControl('',Validators.required)
+    phone: new FormControl('',Validators.required),
   });
+  
   constructor() { }
 
   ngOnInit(): void {

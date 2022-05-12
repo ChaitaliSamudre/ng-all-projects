@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms'
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
+import { ActivatedRoute, Router } from '@angular/router';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-login',
@@ -7,19 +9,67 @@ import { FormControl, FormGroup, Validators } from '@angular/forms'
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  myform : FormGroup = new FormGroup(
-    {
-    name: new FormControl('',Validators.required),  
-    phone: new FormControl('',Validators.required)
-    
-  });
+  loginForm!: FormGroup;
+  loading = false;
+  submitted = false;
+  returnUrl?: string;
 
-  constructor() { }
+  userMessage: string = '';
+
+  constructor(
+    private formBuilder: FormBuilder,
+    private route: ActivatedRoute,
+    private router: Router,
+    private myuser: UserService
+
+  ) { }
+
 
   ngOnInit(): void {
+    this.loginForm = this.formBuilder.group({
+      name: ['', Validators.required],
+      phone: ['', Validators.required]
+    });
+
+    // get return url from route parameters or default to '/'
+    this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
   }
-  getValues() {
-    console.log(this.myform);
+
+  // convenience getter for easy access to form fields
+  get f() { return this.loginForm.controls; }
+
+  onSubmit() {
+    this.submitted = true;
+
+    // stop here if form is invalid
+    if (this.loginForm.invalid) {
+      return;
+    }
+
+    this.loading = true;
+
+
+    this.myuser.loginUser(this.f['name'].value, this.f['phone'].value)
+      .subscribe(
+        {
+          next: (data: any) => {
+            this.loading = true;
+            console.log(data, this.f)
+
+            if (data.length) {
+              // sessionStorage.setItem('loggedUser', JSON.stringify(data[0]));
+              this.router.navigate(['/listing']);
+            } else {
+              this.userMessage = 'Login user not found, please enter correct name and phone number';
+            }
+
+          },
+          error: (e) => {
+            this.loading = false;
+            console.error(e)
+          }
+        }
+      )
   }
 
 }

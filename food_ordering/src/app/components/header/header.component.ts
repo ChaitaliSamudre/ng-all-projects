@@ -21,7 +21,7 @@ export class HeaderComponent implements OnInit {
         {
           height: '500px',
           width: '600px',
-          disableClose: true
+          // disableClose: false
         },
       );
 

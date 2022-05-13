@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
+import { MatDialog } from '@angular/material/dialog';
 @Component({
   selector: 'app-listing',
   templateUrl: './listing.component.html',
@@ -8,9 +8,9 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ListingComponent implements OnInit {
   Box1 = [
     {
-     Name: 'Pizza',
-     Price: 300,
-     imagelink: '../../assets/image/img2.jpg'
+      Name: 'Pizza',
+      Price: 300,
+      imagelink: '../../assets/image/img2.jpg'
     },
     {
       Name: 'Burger',
@@ -19,10 +19,11 @@ export class ListingComponent implements OnInit {
 
     }
   ];
- 
-  constructor() { }
+
+  constructor(private dialogRef: MatDialog) { }
 
   ngOnInit(): void {
+    this.dialogRef.closeAll();
   }
 
 }

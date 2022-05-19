@@ -36,6 +36,9 @@ export default class HeaderLayout extends React.Component {
                         <li className="nav-item">
                             <Link to="/reg">Registration Page</Link>
                         </li>
+                        <li className="nav-item">
+                            <Link to="/login">Login</Link>
+                        </li>
                     </ul>
                 </div>
             </nav>

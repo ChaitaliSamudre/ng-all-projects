@@ -108,7 +108,7 @@ export default class FormComponent extends React.Component {
                         <input type="text" className="form-control" name="password"
                             onChange={this.formValChange} />
 
-                        {isError?.email.length > 0 && (
+                        {isError?.password.length > 0 && (
                             <span >{isError?.password}</span>
                         )}
                     </div>

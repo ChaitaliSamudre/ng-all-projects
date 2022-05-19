@@ -68,7 +68,6 @@ router.get('/order-now', function (req, res, next) {
 });
 
 //post methods-login
-
 router.post('/order-now', (req, res, next) => {
   let {
     Name,
